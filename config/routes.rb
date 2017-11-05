@@ -1,3 +1,8 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  resources :guides
+  get 'static/quotes'
+
+  get 'static/home'
+
+ root to: 'static#home'
 end
